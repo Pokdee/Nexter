@@ -1,0 +1,15 @@
+.container {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 8rem 1fr;
+  .sidebar {
+    background-color: $color-primary;
+    grid-column: 1/2;
+    height: 100%;
+  }
+  .content {
+    grid-column: 2/3;
+    height: 100%;
+  }
+}

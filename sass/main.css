@@ -1,0 +1,291 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  color: #c69963;
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.header {
+  height: 80vh;
+  font-family: "Josefin Sans", sans-serif;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 71% 1fr;
+      grid-template-columns: 71% 1fr;
+}
+
+.header .info {
+  height: 100%;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(16, 29, 44, 0.9)), to(rgba(16, 29, 44, 0.9))), url(../img/hero.jpeg);
+  background-image: linear-gradient(to right, rgba(16, 29, 44, 0.9), rgba(16, 29, 44, 0.9)), url(../img/hero.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8rem 1fr 8rem;
+      grid-template-columns: 8rem 1fr 8rem;
+  -ms-grid-rows: 25% 1fr 25%;
+      grid-template-rows: 25% 1fr 25%;
+}
+
+.header .info .logo_n_text {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  grid-area: 1/2/2/2;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.header .info .logo_n_text .logo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1fr;
+      grid-template-columns: 20% 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  grid-gap: 1rem;
+}
+
+.header .info .logo_n_text .logo_icon {
+  width: 4rem;
+  height: 4rem;
+}
+
+.header .info .logo_n_text .logo_text {
+  display: inline-block;
+  font-size: 4rem;
+}
+
+.header .info .heading_btn {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 2/2/3/3;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15% 40% 30% 15%;
+      grid-template-rows: 15% 40% 30% 15%;
+}
+
+.header .info .heading {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+.header .info .heading_primary {
+  display: block;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+
+.header .info .heading_secondary {
+  color: white;
+  font-size: 5rem;
+}
+
+.header .info .btnview {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  width: 32%;
+  height: 63%;
+  background-color: #c69963;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  font-family: inherit;
+}
+
+@media (hover: hover) {
+  .header .info .btnview:hover {
+    background-color: #b28451;
+  }
+}
+
+.header .info .seen-on {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+  font-size: 2.5rem;
+  color: #aaa;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 10% 1fr;
+      grid-template-rows: 10% 1fr;
+  justify-items: center;
+}
+
+.header .info .seen-on_text {
+  font-size: 1.7rem;
+  position: relative;
+}
+
+.header .info .seen-on_text::before, .header .info .seen-on_text::after {
+  content: "";
+  width: 340px;
+  height: 1px;
+  background-color: white;
+  position: absolute;
+  top: 50%;
+}
+
+.header .info .seen-on_text::before {
+  left: 50%;
+  -webkit-transform: translate(-115%, -50%);
+          transform: translate(-115%, -50%);
+}
+
+.header .info .seen-on_text::after {
+  right: 50%;
+  -webkit-transform: translate(115%, -50%);
+          transform: translate(115%, -50%);
+}
+
+.header .info .seen-on .com-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .realtors-box {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  background-color: #101d2c;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20% 1fr 20%;
+      grid-template-columns: 20% 1fr 20%;
+  -ms-grid-rows: 15% 10% 1fr 15%;
+      grid-template-rows: 15% 10% 1fr 15%;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .realtors-box .realtors-text {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.header .realtors-box .realtors-list {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-area: 3/2/4/3;
+  -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -ms-grid-column-align: stretch;
+      justify-self: stretch;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+}
+
+.header .realtors-box .realtors {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.header .realtors-box .realtors-img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+}
+
+.header .realtors-box .realtors-info {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-grid-rows: 1fr 30% 30% 1fr;
+      grid-template-rows: 1fr 30% 30% 1fr;
+  color: white;
+}
+
+.header .realtors-box .realtors-info .name {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header .realtors-box .realtors-info .record {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.container {
+  width: 100vw;
+  height: auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 8rem 1fr;
+      grid-template-columns: 8rem 1fr;
+}
+
+.container .sidebar {
+  background-color: #c69963;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  height: 100%;
+}
+
+.container .content {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  height: 100%;
+}
+/*# sourceMappingURL=main.css.map */
