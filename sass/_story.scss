@@ -1,0 +1,9 @@
+.story__pic {
+  grid-area: 3 / full-start/4/col-start 5;
+  background-color: $color-primary;
+}
+.story__content {
+  grid-area: 3 / col-start 5/4 / full-end;
+
+  background-color: $color-grey-light-1;
+}

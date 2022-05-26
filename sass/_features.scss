@@ -1,0 +1,28 @@
+.features {
+  grid-area: 2 / center-start/3/center-end;
+  background-color: white;
+  font-family: $font-display;
+  margin: 15rem 0;
+  display: grid;
+  grid-gap: 6rem;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  &-box {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    grid-gap: 2rem;
+  }
+
+  &-icon {
+    width: 5rem;
+    height: 5rem;
+    fill: $color-primary-dark;
+    grid-row: 1 / span 2;
+    transform: translateY(-1.5rem);
+  }
+
+  &__para {
+    font-size: 1.6rem;
+    font-weight: 400;
+  }
+}
