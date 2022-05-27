@@ -1,0 +1,16 @@
+.btn-gold {
+  background-color: $color-primary;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  border: none;
+  color: white;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-primary-dark;
+    }
+  }
+}

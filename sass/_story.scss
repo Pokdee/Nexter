@@ -1,9 +1,57 @@
 .story__pic {
   grid-area: 3 / full-start/4/col-start 5;
   background-color: $color-primary;
+  background-image: url(../img/back.jpg);
+  background-size: cover;
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+
+  &-first {
+    grid-area: 2/2 / span 4 / span 4;
+    width: 100%;
+    height: 100%;
+  }
+  &-second {
+    grid-area: 4/4 / span 3 / span 4;
+    width: 115%;
+    height: 80%;
+    z-index: 100;
+  }
 }
-.story__content {
+.story__text {
   grid-area: 3 / col-start 5/4 / full-end;
 
   background-color: $color-grey-light-1;
+
+  display: grid;
+  grid-template-columns: 8vw 1fr 5vw;
+  grid-template-rows: repeat(4, 1fr);
+
+  &-rating {
+    color: $color-primary;
+    grid-area: 1/2/2/3;
+    align-self: end;
+  }
+
+  &-heading {
+    grid-area: 2/2/3/3;
+    align-self: center;
+    line-height: 3.5rem;
+  }
+
+  &-para {
+    grid-area: 3/2/4/3;
+    font-size: 1.6rem;
+    line-height: 2.5rem;
+    font-style: italic;
+  }
+
+  .btnfind {
+    grid-area: 4/2/5/3;
+    align-self: start;
+    width: 58%;
+    height: 40%;
+  }
 }
