@@ -27,7 +27,7 @@
 
   display: grid;
   grid-template-columns: 8vw 1fr 5vw;
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 22%);
 
   &-rating {
     color: $color-primary;
