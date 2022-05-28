@@ -1,4 +1,80 @@
 .homes {
   grid-area: 4 / center-start/5/center-end;
-  background-color: $color-grey-light-2;
+
+  padding: 15rem 0;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+
+  gap: 6rem;
+
+  .home {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      fill: $color-primary;
+    }
+
+    &-image {
+      width: 100%;
+      height: 100%;
+      grid-area: 1/1/3/5;
+    }
+
+    .heart-icon {
+      grid-area: 1/1/2/5;
+      justify-self: end;
+      margin: 1rem;
+    }
+
+    &-heading {
+      z-index: 5;
+      grid-area: 2/1/3/5;
+      background-color: $color-secondary;
+      color: white;
+
+      padding: 2rem;
+      text-align: center;
+      width: 80%;
+      align-self: end;
+      justify-self: center;
+      transform: translateY(50%);
+    }
+
+    &-info {
+      background-color: $color-grey-light-1;
+      grid-area: 3/1/4/5;
+
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 8rem);
+      align-items: center;
+      justify-items: start;
+      grid-gap: 2rem;
+
+      p {
+        font-size: 1.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+      }
+      p {
+        &:nth-child(1),
+        &:nth-child(2) {
+          margin-top: 30%;
+        }
+
+        margin-left: 20%;
+      }
+    }
+
+    .btn-contact {
+      grid-area: 4/1/5/5;
+      padding: 1.5rem 0;
+    }
+  }
 }

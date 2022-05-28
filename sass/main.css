@@ -44,7 +44,7 @@ body {
 }
 
 .heading-h3 {
-  font-size: 2.6rem;
+  font-size: 1.6rem;
 }
 
 .heading-h4 {
@@ -491,7 +491,118 @@ body {
   -ms-grid-row: 4;
   -ms-grid-row-span: 1;
   grid-area: 4 / center-start/5/center-end;
-  background-color: #aaa;
+  padding: 15rem 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 6rem;
+}
+
+.homes .home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+}
+
+.homes .home-icon {
+  width: 2rem;
+  height: 2rem;
+  fill: #c69963;
+}
+
+.homes .home-image {
+  width: 100%;
+  height: 100%;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1/1/3/5;
+}
+
+.homes .home .heart-icon {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 1/1/2/5;
+  -ms-grid-column-align: end;
+      justify-self: end;
+  margin: 1rem;
+}
+
+.homes .home-heading {
+  z-index: 5;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 2/1/3/5;
+  background-color: #101d2c;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  width: 80%;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+}
+
+.homes .home-info {
+  background-color: #f9f7f6;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 3/1/4/5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: (8rem)[2];
+      grid-template-rows: repeat(2, 8rem);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: start;
+  grid-gap: 2rem;
+}
+
+.homes .home-info p {
+  font-size: 1.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.homes .home-info p {
+  margin-left: 20%;
+}
+
+.homes .home-info p:nth-child(1), .homes .home-info p:nth-child(2) {
+  margin-top: 30%;
+}
+
+.homes .home .btn-contact {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: 4/1/5/5;
+  padding: 1.5rem 0;
 }
 
 .gallery {
