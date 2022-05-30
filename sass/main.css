@@ -81,6 +81,37 @@ body {
   background-color: #c69963;
 }
 
+.sidebar_icon {
+  width: 4.5rem;
+  height: 2px;
+  position: fixed;
+  top: 7%;
+  left: 1rem;
+  -webkit-transform: translate(15%, -50%);
+          transform: translate(15%, -50%);
+  background-color: white;
+}
+
+.sidebar::before, .sidebar::after {
+  content: "";
+  position: fixed;
+  width: 4.5rem;
+  height: 2px;
+  background-color: white;
+  top: 7%;
+  left: 1rem;
+}
+
+.sidebar::before {
+  -webkit-transform: translate(15%, -1.5rem);
+          transform: translate(15%, -1.5rem);
+}
+
+.sidebar::after {
+  -webkit-transform: translate(15%, 1.5rem);
+          transform: translate(15%, 1.5rem);
+}
+
 .header {
   font-family: "Josefin Sans", sans-serif;
   -ms-grid-row: 1;
@@ -744,6 +775,55 @@ body {
   -ms-grid-row: 6;
   -ms-grid-row-span: 1;
   grid-area: 6 / full-start/7/full-end;
-  background-color: #54483a;
+  background-color: #101d2c;
+  color: white;
+  padding: 8rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 15rem max-content;
+      grid-template-rows: 15rem -webkit-max-content;
+      grid-template-rows: 15rem max-content;
+}
+
+.footer_ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(15rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  grid-gap: 2rem;
+}
+
+.footer_li {
+  list-style: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.footer_li:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+  -webkit-transform: translateY(-1rem);
+          transform: translateY(-1rem);
+}
+
+.footer_link:link, .footer_link:visited {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.footer_copy {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-top: 6rem;
 }
 /*# sourceMappingURL=main.css.map */

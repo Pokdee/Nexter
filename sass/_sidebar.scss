@@ -1,4 +1,32 @@
 .sidebar {
   grid-area: 1 / sidebar-start/-1/sidebar-end;
   background-color: $color-primary;
+
+  &_icon {
+    width: 4.5rem;
+    height: 2px;
+    position: fixed;
+    top: 7%;
+    left: 1rem;
+    transform: translate(15%, -50%);
+    background-color: white;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: fixed;
+    width: 4.5rem;
+    height: 2px;
+    background-color: white;
+    top: 7%;
+    left: 1rem;
+  }
+
+  &::before {
+    transform: translate(15%, -1.5rem);
+  }
+  &::after {
+    transform: translate(15%, 1.5rem);
+  }
 }
